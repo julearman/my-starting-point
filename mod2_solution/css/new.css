@@ -1,0 +1,85 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height:100vh;
+  padding: 1rem;
+
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+  margin: 1rem;
+  width: 80%;
+}
+
+main .item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  border: 2px solid black;
+}
+.item div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  height: fit-content;
+  width:7rem;
+}
+.chicken{
+  background-color: blue;
+}
+.sushi{
+  background-color: rgb(23, 189, 67);
+}
+.beef{
+  background-color: rgb(171, 17, 66);
+}
+.item p{
+  margin: 0.75rem;;
+}
+
+@media (max-width: 767px) {
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+
+}
+
+
+@media (min-width: 768px) and (max-width:991px){
+main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+ padding: 1rem;
+  
+}
+
+}
+
+
+
+/* @media (min-width: 992px) { 
+main div {
+  height: fit-content;
+  width: 25rem;
+}
+
+
+  
+} */
